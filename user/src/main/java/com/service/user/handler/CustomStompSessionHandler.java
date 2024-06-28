@@ -12,7 +12,6 @@ public class CustomStompSessionHandler extends StompSessionHandlerAdapter {
 
     private static StompSession activeSession;
 
-
     @Override
     public void afterConnected(StompSession session, StompHeaders connectedHeaders) {
         log.info("New session established : " + session.getSessionId());
